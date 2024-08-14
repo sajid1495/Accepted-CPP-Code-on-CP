@@ -1,7 +1,7 @@
 /******************Bismillahir Rahmanir Rahim********************
  Name : SAJEDUL ISLAM
  CF_Handle : SaJiD_96
- Institution : Rajshahi University Of Engineering & Techoonology
+ Institution : Rajshahi University Of Engineering & Technology
  E-Mail : m.sajid1495@gmail.com
  ***************************************************************/
 
