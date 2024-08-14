@@ -69,15 +69,6 @@ string decimalToHexadecimal(int decimalNum) {
     return hexadecimalNum;
 }
 
-unsigned long long sum(int n){
-    if(n%2 == 0){
-        return (1LL*((n/2) * (n+1)));
-    }
-    else{
-        return (1LL*(n*((n+1)/2)));
-    }
-}
-
 double power(double a,int b){
     double ans = 1;
     for(int i = 0; i < b; i++){
@@ -121,37 +112,11 @@ int main() {
     int t = 1;
     //cin >> t;
     while(t--){
-        int x,ans = 0;
-        cin >> x;
-        int y = pow(2,x);
-        vector<int> set(x);
-        vector<vector<int>> subset(y);
-        for(int i = 0; i < x; i++){
-            cin >> set[i];
-        }
-        for(int i = 0; i < pow(2,x); i++){
-            string s = binary(i,x);
-            for(int j = 0; j < x; j++){
-                if(s[j] == '1'){
-                    subset[i].push_back(set[j]);
-                    ans += set[j];
-                }
-            }
-        }
-        for(int i = 0; i < subset.size(); i++){
-            cout << "{";
-            for(auto val : subset[i]){
-                cout << val ;
-                if(val == subset[i].back()){
-                    cout << "";
-                }
-                else{
-                    cout << ",";
-                }
-            }
-            cout << "}" << endl;
-        }
-        cout << "R = " << ans << endl;
-    }
+        
+
+        //write your solution here
+
+
+
     return 0;
 }
