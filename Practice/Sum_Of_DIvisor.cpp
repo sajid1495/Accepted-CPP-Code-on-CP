@@ -105,14 +105,44 @@ string binary(int i,int x){
     return tmp+s;
 }
 
+long long sumOfDivisors(int n) {
+    long long sumOfDiv = 0; 
+    int sqrtN = sqrt(n); 
+    for (int i = 1; i <= sqrtN; ++i) { 
+        if (n % i == 0) { 
+            if(i*i == n){
+                sumOfDiv += i;
+            }
+            else{
+                sumOfDiv += (i + n/i);
+            }
+        }
+    }
+    
+    if(n == 1){
+        return 0;
+    }
+    else{
+        return (sumOfDiv-n);
+    } 
+}
+
+
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    int t = 1;
-    //cin >> t;
-    while(t--){
+    vector<int> sum; 
+    for(int i = 1; i <= 500000; i++){
+        sum.push_back(sumOfDivisors(i));
+    }
 
+    int t = 1;
+    cin >> t;
+    while(t--){
+        int num;
+        cin >> num;
+        cout << sum[num-1] << endl;
     }
 
     return 0;

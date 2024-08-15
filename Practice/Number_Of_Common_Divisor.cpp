@@ -105,14 +105,31 @@ string binary(int i,int x){
     return tmp+s;
 }
 
+int numOfDiv(int num){
+    int cnt = 0;
+    for(int i=1;i*i<=num;i++) {
+        if(num%i == 0) {
+            if(num/i == i)
+                cnt++;
+            else
+                cnt += 2;
+        }
+    }
+    return cnt;
+}
+
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
     int t = 1;
-    //cin >> t;
+    scanf("%d",&t);
     while(t--){
-
+        int a,b,ct;
+        scanf("%d %d", &a, &b);
+        int gcd = __gcd(a,b);
+        ct = numOfDiv(gcd);
+        printf("%d\n", ct);
     }
 
     return 0;

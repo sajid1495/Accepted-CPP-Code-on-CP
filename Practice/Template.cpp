@@ -69,15 +69,6 @@ string decimalToHexadecimal(int decimalNum) {
     return hexadecimalNum;
 }
 
-unsigned long long sum(int n){
-    if(n%2 == 0){
-        return (1LL*((n/2) * (n+1)));
-    }
-    else{
-        return (1LL*(n*((n+1)/2)));
-    }
-}
-
 double power(double a,int b){
     double ans = 1;
     for(int i = 0; i < b; i++){
@@ -101,9 +92,28 @@ int ispal(int n){
     }
 }
 
+string binary(int i,int x){
+    string s = "",tmp = "";
+    while(i > 0){
+        (i%2 == 0)? s = '0' + s : s = '1' + s;
+        i /= 2;
+    }
+    int len = x - s.size();
+    for(int i = 0; i < len; i++){
+            tmp += '0';
+    }
+    return tmp+s;
+}
+
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-    cout << 4 * 5 / 3 % 4 + 7 / 3 << endl;
+
+    int t = 1;
+    //cin >> t;
+    while(t--){
+
+    }
+
     return 0;
 }
