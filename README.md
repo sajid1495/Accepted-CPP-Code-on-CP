@@ -12,4 +12,4 @@ This repository contains all the C++ code that I've used to solve problems in va
 Feel free to browse through the solutions to understand different problem-solving techniques and approaches. You can clone the repository using the following command:
 
 ```bash
-git clone https://github.com/your-username/accepted-cpp-code-on-cp.git
+git clone https://github.com/sajid1495/accepted-cpp-code-on-cp.git
