@@ -92,27 +92,14 @@ int ispal(int n){
     }
 }
 
-string binary(int i,int x){
-    string s = "",tmp = "";
-    while(i > 0){
-        (i%2 == 0)? s = '0' + s : s = '1' + s;
-        i /= 2;
-    }
-    int len = x - s.size();
-    for(int i = 0; i < len; i++){
-            tmp += '0';
-    }
-    return tmp+s;
-}
-
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
     int t = 1;
-    //cin >> t;
+    cin >> t;
     while(t--){
-
+        
     }
 
     return 0;
